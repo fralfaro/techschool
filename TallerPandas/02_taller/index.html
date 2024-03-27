@@ -1561,7 +1561,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/fralfaro/techschool/blob/features/taller_pandas/TallerPandas/02_taller.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+<p><a href="https://colab.research.google.com/github/fralfaro/techschool/blob/main/docs/TallerPandas/02_taller.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
 
 </div>
 </div>
@@ -1584,9 +1584,9 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="descripcion-del-proyecto">Descripci&#243;n del proyecto<a class="anchor-link" href="#descripcion-del-proyecto">&#182;</a></h2><h3 id="introduccion">Introducci&#243;n<a class="anchor-link" href="#introduccion">&#182;</a></h3><p><img src="https://svgsilh.com/svg/2073069.svg" width = "350" ></p>
+<h2 id="descripcion-del-proyecto">Descripci&#243;n del proyecto<a class="anchor-link" href="#descripcion-del-proyecto">&#182;</a></h2><h3 id="introduccion">Introducci&#243;n<a class="anchor-link" href="#introduccion">&#182;</a></h3><p><img src="https://raw.githubusercontent.com/fralfaro/techschool/main/docs/images/tan.jpg" width = "400" ></p>
 <p>Siempre que realizamos un análisis tenemos que formular hipótesis que luego podamos poner a prueba. A veces aceptamos estas hipótesis; otras, las rechazamos. Para tomar las decisiones correctas, una empresa debe ser capaz de entender si está haciendo las suposiciones correctas.</p>
-<p>En este proyecto, compararás las preferencias musicales de las ciudades de <strong>Springfield</strong> y <strong>Shelbyville</strong>. Se examinarán datos reales de <strong>Y.Music</strong> para comprobar las hipótesis que se exponen a continuación y comparar el uso de los usuarios de estas dos ciudades.</p>
+<p>En este proyecto, compararás las preferencias musicales de las ciudades de <strong>Tangananica</strong> y <strong>Tangananá</strong>. Se examinarán datos reales de <strong>Y.Music</strong> para comprobar las hipótesis que se exponen a continuación y comparar el uso de los usuarios de estas dos ciudades.</p>
 <h3 id="descripcion-de-los-datos">Descripci&#243;n de los datos<a class="anchor-link" href="#descripcion-de-los-datos">&#182;</a></h3><p>Los datos se almacenan en el archivo <code>music_project.xlsx</code>, separado en las pestañas <code>Monday</code>, <code>Wednesday</code> y <code>Friday</code>.</p>
 <p>Cada pestaña, contiene las siguiente información:</p>
 <table>
@@ -1639,8 +1639,8 @@ Licensed under the Apache License, Version 2.0.
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="ejercicios">Ejercicios<a class="anchor-link" href="#ejercicios">&#182;</a></h2><h3 id="hipotesis-a-verificar">Hip&#243;tesis a verificar<a class="anchor-link" href="#hipotesis-a-verificar">&#182;</a></h3><ol>
 <li>La actividad de los usuarios difiere según el día de la semana y dependiendo de la ciudad.</li>
-<li>Los lunes por la mañana, los habitantes de Springfield y Shelbyville escuchan diferentes géneros. Lo mismo ocurre con los viernes por la noche.</li>
-<li>Los oyentes de Springfield y Shelbyville tienen preferencias distintas. En Springfield prefieren el pop mientras que en Shelbyville hay más aficionados al rap.</li>
+<li>Los lunes por la mañana, los habitantes de Tangananica y Tangananá escuchan diferentes géneros. Lo mismo ocurre con los viernes por la noche.</li>
+<li>Los oyentes de Tangananica y Tangananá tienen preferencias distintas. En Tangananica prefieren el pop mientras que en Tangananá hay más aficionados al rap.</li>
 </ol>
 
 </div>
@@ -1734,7 +1734,7 @@ import pandas as pd</div>
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Especificar la ruta del archivo Excel</span>
-<span class="n">excel_file</span> <span class="o">=</span> <span class="s1">&#39;data/music_project.xlsx&#39;</span>
+<span class="n">excel_file</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/fralfaro/techschool/main/docs/TallerPandas/data/music_project_cl.xlsx&#39;</span>
 
 <span class="c1"># Lee los nombres de las hojas</span>
 <span class="n">nombres_hojas</span> <span class="o">=</span> <span class="c1">#FIXME</span>
@@ -1743,7 +1743,7 @@ import pandas as pd</div>
 <span class="n">nombres_hojas</span>
 </pre></div>
 <div id="cell-2" class="clipboard-copy-txt"># Especificar la ruta del archivo Excel
-excel_file = 'data/music_project.xlsx'
+excel_file = 'https://raw.githubusercontent.com/fralfaro/techschool/main/docs/TallerPandas/data/music_project_cl.xlsx'
 
 # Lee los nombres de las hojas
 nombres_hojas = #FIXME
@@ -1780,14 +1780,14 @@ nombres_hojas</div>
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Leer archivos</span>
-<span class="n">df_monday</span> <span class="o">=</span> <span class="c1">#FIXME</span>
-<span class="n">df_wednesday</span> <span class="o">=</span> <span class="c1">#FIXME</span>
-<span class="n">df_friday</span> <span class="o">=</span> <span class="c1">#FIXME</span>
+<span class="n">df_monday</span> <span class="o">=</span> <span class="c1">#FIXME (usar &#39;pd.read_excel&#39;)</span>
+<span class="n">df_wednesday</span> <span class="o">=</span> <span class="c1">#FIXME  (usar &#39;pd.read_excel&#39;)</span>
+<span class="n">df_friday</span> <span class="o">=</span> <span class="c1">#FIXME  (usar &#39;pd.read_excel&#39;)</span>
 </pre></div>
 <div id="cell-3" class="clipboard-copy-txt"># Leer archivos
-df_monday = #FIXME
-df_wednesday = #FIXME
-df_friday = #FIXME</div>
+df_monday = #FIXME (usar 'pd.read_excel')
+df_wednesday = #FIXME  (usar 'pd.read_excel')
+df_friday = #FIXME  (usar 'pd.read_excel')</div>
     
         </div>
     </div>
@@ -1987,9 +1987,9 @@ df.info()</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME (usar &#39;.isnull().sum()&#39;)</span>
 </pre></div>
-<div id="cell-7" class="clipboard-copy-txt">#FIXME</div>
+<div id="cell-7" class="clipboard-copy-txt">#FIXME (usar '.isnull().sum()')</div>
     
         </div>
     </div>
@@ -2006,7 +2006,7 @@ df.info()</div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>No todos los valores faltantes afectan la investigación. Por ejemplo, los valores que faltan en <code>track</code> y <code>artist</code> no son críticos. Simplemente puede reemplazarlos con <em>clear markers</em>.</p>
-<p>Pero los valores faltantes en <code>'genre'</code> pueden afectar la comparación de las preferencias musicales en Springfield y Shelbyville. En la vida real, sería útil conocer las razones por las que faltan los datos e intentar compensarlos. Pero no tenemos esa oportunidad en este proyecto. Así que tendrás que:</p>
+<p>Pero los valores faltantes en <code>'genre'</code> pueden afectar la comparación de las preferencias musicales en Tangananica y Tangananá. En la vida real, sería útil conocer las razones por las que faltan los datos e intentar compensarlos. Pero no tenemos esa oportunidad en este proyecto. Así que tendrás que:</p>
 <ul>
 <li>Complete estos valores faltantes con marcadores</li>
 <li>Evalúe cuánto pueden afectar los valores faltantes a sus cálculos</li>
@@ -2040,12 +2040,12 @@ df.info()</div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Recorrer los nombres de las columnas y reemplazar los valores faltantes con &#39;unknown&#39;</span>
 <span class="n">columns_to_replace</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;track&#39;</span><span class="p">,</span> <span class="s1">&#39;artist&#39;</span><span class="p">,</span> <span class="s1">&#39;genre&#39;</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">columns_to_replace</span><span class="p">:</span>
-    <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="c1">#FIXME</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="c1">#FIXME (usar &#39;.fillna()&#39;)</span>
 </pre></div>
 <div id="cell-8" class="clipboard-copy-txt"># Recorrer los nombres de las columnas y reemplazar los valores faltantes con 'unknown'
 columns_to_replace = ['track', 'artist', 'genre']
 for col in columns_to_replace:
-    df[col] = #FIXME</div>
+    df[col] = #FIXME (usar '.fillna()')</div>
     
         </div>
     </div>
@@ -2087,9 +2087,9 @@ for col in columns_to_replace:
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME (usar &#39;.isnull().sum()&#39;)</span>
 </pre></div>
-<div id="cell-9" class="clipboard-copy-txt">#FIXME</div>
+<div id="cell-9" class="clipboard-copy-txt">#FIXME (usar '.isnull().sum()')</div>
     
         </div>
     </div>
@@ -2133,9 +2133,9 @@ for col in columns_to_replace:
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME (usar &#39;.duplicated().sum()&#39;)</span>
 </pre></div>
-<div id="cell-10" class="clipboard-copy-txt">#FIXME</div>
+<div id="cell-10" class="clipboard-copy-txt">#FIXME (usar '.duplicated().sum()')</div>
     
         </div>
     </div>
@@ -2178,9 +2178,9 @@ for col in columns_to_replace:
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME (usar &#39;.drop_duplicates().sum()&#39;)</span>
 </pre></div>
-<div id="cell-11" class="clipboard-copy-txt">#FIXME</div>
+<div id="cell-11" class="clipboard-copy-txt">#FIXME (usar '.drop_duplicates().sum()')</div>
     
         </div>
     </div>
@@ -2222,9 +2222,9 @@ for col in columns_to_replace:
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME (usar &#39;.duplicated().sum()&#39;)</span>
 </pre></div>
-<div id="cell-12" class="clipboard-copy-txt">#FIXME</div>
+<div id="cell-12" class="clipboard-copy-txt">#FIXME (usar '.duplicated().sum()')</div>
     
         </div>
     </div>
@@ -2247,7 +2247,7 @@ for col in columns_to_replace:
 <li>Aplicarle un método de clasificación</li>
 <li>Para la columna ordenada, llame al método que devolverá todos los valores de columna únicos</li>
 </ul>
-<p><strong>&gt; Ejercicio</strong>: Mostrar y ordenar nombres de 'genre' únicos. (<code>hint</code>: usar comando <code>sorted</code>)</p>
+<p><strong>&gt; Ejercicio</strong>: Mostrar y ordenar nombres de 'genre' únicos. (<code>hint</code>: usar comando <code>sorted()</code> y <code>.unique()</code>)</p>
 
 </div>
 </div>
@@ -2273,9 +2273,9 @@ for col in columns_to_replace:
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME (usar &#39;sorted()&#39; y &#39;.unique()&#39;)</span>
 </pre></div>
-<div id="cell-13" class="clipboard-copy-txt">#FIXME</div>
+<div id="cell-13" class="clipboard-copy-txt">#FIXME (usar 'sorted()' y '.unique()')</div>
     
         </div>
     </div>
@@ -2385,13 +2385,13 @@ def replace_wrong_genres(df,wrong_genres,correct_genre):
 <span class="n">wrong_genres</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hip&#39;</span><span class="p">,</span><span class="s1">&#39;hop&#39;</span><span class="p">,</span><span class="s1">&#39;hip-hop&#39;</span><span class="p">]</span>
 <span class="n">correct_genre</span> <span class="o">=</span> <span class="s1">&#39;hiphop&#39;</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="c1">#FIXME</span>
+<span class="n">df</span> <span class="o">=</span> <span class="c1">#FIXME (aplicar la funcion &#39;replace_wrong_genres&#39; a &#39;df&#39;)</span>
 </pre></div>
 <div id="cell-15" class="clipboard-copy-txt"># Eliminar duplicados implicitos
 wrong_genres = ['hip','hop','hip-hop']
 correct_genre = 'hiphop'
 
-df = #FIXME</div>
+df = #FIXME (aplicar la funcion 'replace_wrong_genres' a 'df')</div>
     
         </div>
     </div>
@@ -2407,7 +2407,7 @@ df = #FIXME</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>&gt; Ejercicio</strong>: Mostrar y ordenar nombres de 'genre' únicos nuevamente. (<code>hint</code>: usar comando <code>sorted</code>)</p>
+<p><strong>&gt; Ejercicio</strong>: Mostrar y ordenar nombres de 'genre' únicos. (<code>hint</code>: usar comando <code>sorted()</code> y <code>.unique()</code>)</p>
 
 </div>
 </div>
@@ -2433,9 +2433,9 @@ df = #FIXME</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME (usar &#39;sorted()&#39; y &#39;.unique()&#39;)</span>
 </pre></div>
-<div id="cell-16" class="clipboard-copy-txt">#FIXME</div>
+<div id="cell-16" class="clipboard-copy-txt">#FIXME (usar 'sorted()' y '.unique()')</div>
     
         </div>
     </div>
@@ -2464,7 +2464,7 @@ df = #FIXME</div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h4 id="testing-hypotheses">Testing hypotheses<a class="anchor-link" href="#testing-hypotheses">&#182;</a></h4><p><strong>Hipótesis 1: comparar el comportamiento de los usuarios en dos ciudades</strong></p>
-<p>Según la primera hipótesis, los usuarios de Springfield y Shelbyville escuchan música de manera diferente. Pruebe esto usando los datos de tres días de la semana: lunes, miércoles y viernes.</p>
+<p>Según la primera hipótesis, los usuarios de Tangananica y Tangananá escuchan música de manera diferente. Pruebe esto usando los datos de tres días de la semana: lunes, miércoles y viernes.</p>
 <ul>
 <li>Divide a los usuarios en grupos por ciudad.</li>
 <li>Compara cuántas pistas reprodujo cada grupo el lunes, miércoles y viernes.</li>
@@ -2472,9 +2472,9 @@ df = #FIXME</div>
 <p>Por el bien de la práctica, realice cada cálculo por separado.</p>
 <p>Evaluar la actividad de los usuarios en cada ciudad. Agrupe los datos por ciudad y encuentre la cantidad de canciones que se reproducen en cada grupo.</p>
 <p><strong>Contando las pistas reproducidas en cada ciudad</strong></p>
-<p>Springfield tiene más pistas reproducidas que Shelbyville. Pero eso no implica que los ciudadanos de Springfield escuchen música con más frecuencia. Esta ciudad es simplemente más grande y hay más usuarios.</p>
+<p>Tangananica tiene más pistas reproducidas que Tangananá. Pero eso no implica que los ciudadanos de Tangananica escuchen música con más frecuencia. Esta ciudad es simplemente más grande y hay más usuarios.</p>
 <p>Ahora agrupe los datos por día de la semana y encuentre el número de pistas reproducidas los lunes, miércoles y viernes.</p>
-<p><strong>&gt; Ejercicio</strong>: Calculo de pistas reproducidas en cada uno de los tres días. (<code>hint</code>: usar comando <code>groupby</code>)</p>
+<p><strong>&gt; Ejercicio</strong>: Calculo de pistas reproducidas en cada uno de los tres días. (<code>hint</code>: usar comando <code>groupby()</code>)</p>
 
 </div>
 </div>
@@ -2500,9 +2500,9 @@ df = #FIXME</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME (usar &#39;.groupby()&#39; sobre &#39;day&#39; y aplicar a &#39;genre&#39; )</span>
 </pre></div>
-<div id="cell-17" class="clipboard-copy-txt">#FIXME</div>
+<div id="cell-17" class="clipboard-copy-txt">#FIXME (usar '.groupby()' sobre 'day' y aplicar a 'genre' )</div>
     
         </div>
     </div>
@@ -2608,11 +2608,11 @@ pivot_df</div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Hipótesis 2: música al principio y al final de la semana</strong></p>
-<p>Según la segunda hipótesis, el lunes por la mañana y el viernes por la noche, los ciudadanos de Springfield escuchan géneros diferentes a los que disfrutan los usuarios de Shelbyville.</p>
+<p>Según la segunda hipótesis, el lunes por la mañana y el viernes por la noche, los ciudadanos de Tangananica escuchan géneros diferentes a los que disfrutan los usuarios de Tangananá.</p>
 <p>Obtenga los dataframes (asegúrese de que el nombre de su tabla combinada coincida con el dataframe proporcionado en los dos bloques de código a continuación):</p>
 <ul>
-<li>Para Springfield — <code>spr_general</code></li>
-<li>Para Shelbyville — <code>shel_general</code></li>
+<li>Para Tangananica — <code>tangananica_general</code></li>
+<li>Para Tangananá — <code>tanganana_general</code></li>
 </ul>
 
 </div>
@@ -2639,11 +2639,11 @@ pivot_df</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Definir &#39;spr_general&#39;, filtrar por ciudad igual a Springfield</span>
-<span class="n">spr_general</span> <span class="o">=</span> <span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Definir &#39;tangananica_general&#39;, filtrar por ciudad igual a Tangananica</span>
+<span class="n">tangananica_general</span> <span class="o">=</span> <span class="c1">#FIXME (usar &#39;.loc()&#39; y filtrar por ciudad objetivo )</span>
 </pre></div>
-<div id="cell-19" class="clipboard-copy-txt"># Definir 'spr_general', filtrar por ciudad igual a Springfield
-spr_general = #FIXME</div>
+<div id="cell-19" class="clipboard-copy-txt"># Definir 'tangananica_general', filtrar por ciudad igual a Tangananica
+tangananica_general = #FIXME (usar '.loc()' y filtrar por ciudad objetivo )</div>
     
         </div>
     </div>
@@ -2673,11 +2673,11 @@ spr_general = #FIXME</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Definir &#39;shel_general&#39;, filtrar por ciudad igual a Shelbyville</span>
-<span class="n">shel_general</span> <span class="o">=</span> <span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Definir &#39;tanganana_general&#39;, filtrar por ciudad igual a Tanganana</span>
+<span class="n">tanganana_general</span> <span class="o">=</span> <span class="c1">#FIXME (usar &#39;.loc()&#39; y filtrar por ciudad objetivo )</span>
 </pre></div>
-<div id="cell-20" class="clipboard-copy-txt"># Definir 'shel_general', filtrar por ciudad igual a Shelbyville
-shel_general = #FIXME</div>
+<div id="cell-20" class="clipboard-copy-txt"># Definir 'tanganana_general', filtrar por ciudad igual a Tanganana
+tanganana_general = #FIXME (usar '.loc()' y filtrar por ciudad objetivo )</div>
     
         </div>
     </div>
@@ -2711,7 +2711,7 @@ shel_general = #FIXME</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2752,7 +2752,7 @@ def genre_weekday(df, day, time1, time2):
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>&gt; Ejercicio</strong>:  Llamar a la funcion para el lunes por la mañana en Springfield ('07:00:00', '11:00:00'.</p>
+<p><strong>&gt; Ejercicio</strong>:  Llamar a la funcion para el lunes por la mañana en Tangananica ('07:00:00', '11:00:00').</p>
 
 </div>
 </div>
@@ -2778,9 +2778,9 @@ def genre_weekday(df, day, time1, time2):
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME (ejemplo directo: &#39;genre_weekday(tangananica_general, &#39;Monday&#39;, &#39;07:00:00&#39;, &#39;11:00:00&#39;)&#39;)</span>
 </pre></div>
-<div id="cell-22" class="clipboard-copy-txt">#FIXME</div>
+<div id="cell-22" class="clipboard-copy-txt">#FIXME (ejemplo directo: 'genre_weekday(tangananica_general, 'Monday', '07:00:00', '11:00:00')')</div>
     
         </div>
     </div>
@@ -2796,7 +2796,7 @@ def genre_weekday(df, day, time1, time2):
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>&gt; Ejercicio</strong>:  Llamar a la funcion para el lunes por la mañana en Shelbyville ('07:00:00', '11:00:00').</p>
+<p><strong>&gt; Ejercicio</strong>:  Llamar a la funcion para el lunes por la mañana en Tangananá ('07:00:00', '11:00:00').</p>
 
 </div>
 </div>
@@ -2822,9 +2822,9 @@ def genre_weekday(df, day, time1, time2):
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME (aplicar lo mismo que el caso anterior)</span>
 </pre></div>
-<div id="cell-23" class="clipboard-copy-txt">#FIXME</div>
+<div id="cell-23" class="clipboard-copy-txt">#FIXME (aplicar lo mismo que el caso anterior)</div>
     
         </div>
     </div>
@@ -2840,7 +2840,7 @@ def genre_weekday(df, day, time1, time2):
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>&gt; Ejercicio</strong>:  Llamar a la funcion para el viernes por la noche en Springfield ('17:00:00', '23:00:00')</p>
+<p><strong>&gt; Ejercicio</strong>:  Llamar a la funcion para el viernes por la noche en Tangananica ('17:00:00', '23:00:00')</p>
 
 </div>
 </div>
@@ -2866,9 +2866,9 @@ def genre_weekday(df, day, time1, time2):
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME (aplicar lo mismo que el caso anterior)</span>
 </pre></div>
-<div id="cell-24" class="clipboard-copy-txt">#FIXME</div>
+<div id="cell-24" class="clipboard-copy-txt">#FIXME (aplicar lo mismo que el caso anterior)</div>
     
         </div>
     </div>
@@ -2884,7 +2884,7 @@ def genre_weekday(df, day, time1, time2):
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>&gt; Ejercicio</strong>:  Llamar a la funcion para el viernes por la noche en Shelbyville ('17:00:00', '23:00:00')</p>
+<p><strong>&gt; Ejercicio</strong>:  Llamar a la funcion para el viernes por la noche en Tangananá ('17:00:00', '23:00:00')</p>
 
 </div>
 </div>
@@ -2910,9 +2910,9 @@ def genre_weekday(df, day, time1, time2):
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME (aplicar lo mismo que el caso anterior)</span>
 </pre></div>
-<div id="cell-25" class="clipboard-copy-txt">#FIXME</div>
+<div id="cell-25" class="clipboard-copy-txt">#FIXME (aplicar lo mismo que el caso anterior)</div>
     
         </div>
     </div>
@@ -2940,9 +2940,9 @@ def genre_weekday(df, day, time1, time2):
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Hipótesis 3: preferencias de género en Springfield y Shelbyvill</strong></p>
-<p><strong>Hipótesis</strong>: Shelbyville ama la música rap. A los ciudadanos de Springfield les gusta más el pop.</p>
-<p>Agrupa la tabla <code>spr_general</code> por género y encuentra el número de canciones reproducidas para cada género con el método <code>count()</code>. Luego ordene el resultado en orden descendente y guárdelo en <code>spr_genres</code>.</p>
+<p><strong>Hipótesis 3: preferencias de género en Tangananica y Shelbyvill</strong></p>
+<p><strong>Hipótesis</strong>: Tangananá ama la música rap. A los ciudadanos de Tangananica les gusta más el pop.</p>
+<p>Agrupa la tabla <code>tangananica_general</code> por género y encuentra el número de canciones reproducidas para cada género con el método <code>count()</code>. Luego ordene el resultado en orden descendente y guárdelo en <code>tangananica_genres</code>.</p>
 
 </div>
 </div>
@@ -2968,13 +2968,13 @@ def genre_weekday(df, day, time1, time2):
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Contar cuántas veces aparece cada género musical en el DataFrame &#39;spr_general&#39;</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Contar cuántas veces aparece cada género musical en el DataFrame &#39;tangananica_general&#39;</span>
 <span class="c1"># y ordenar los resultados de forma descendente.</span>
-<span class="n">spr_genres</span> <span class="o">=</span> <span class="n">spr_general</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;genre&#39;</span><span class="p">)[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">tangananica_genres</span> <span class="o">=</span> <span class="n">tangananica_general</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;genre&#39;</span><span class="p">)[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
-<div id="cell-26" class="clipboard-copy-txt"># Contar cuántas veces aparece cada género musical en el DataFrame 'spr_general'
+<div id="cell-26" class="clipboard-copy-txt"># Contar cuántas veces aparece cada género musical en el DataFrame 'tangananica_general'
 # y ordenar los resultados de forma descendente.
-spr_genres = spr_general.groupby('genre')['genre'].count().sort_values(ascending=False)</div>
+tangananica_genres = tangananica_general.groupby('genre')['genre'].count().sort_values(ascending=False)</div>
     
         </div>
     </div>
@@ -2990,7 +2990,7 @@ spr_genres = spr_general.groupby('genre')['genre'].count().sort_values(ascending
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>&gt; Ejercicio</strong>:  Mostrar las primeras 10 filas de 'spr_genres'</p>
+<p><strong>&gt; Ejercicio</strong>:  Mostrar las primeras 10 filas de 'tangananica_genres'</p>
 
 </div>
 </div>
@@ -3016,9 +3016,9 @@ spr_genres = spr_general.groupby('genre')['genre'].count().sort_values(ascending
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME (usar &#39;.head(10)&#39;)</span>
 </pre></div>
-<div id="cell-27" class="clipboard-copy-txt">#FIXME</div>
+<div id="cell-27" class="clipboard-copy-txt">#FIXME (usar '.head(10)')</div>
     
         </div>
     </div>
@@ -3034,8 +3034,8 @@ spr_genres = spr_general.groupby('genre')['genre'].count().sort_values(ascending
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Ahora haz lo mismo con los datos de Shelbyville.</p>
-<p>Agrupa la tabla <code>shel_general</code> por género y encuentra el número de canciones reproducidas para cada género. Luego ordene el resultado en orden descendente y guárdelo en la tabla <code>shel_genres</code>:</p>
+<p>Ahora haz lo mismo con los datos de Tangananá.</p>
+<p>Agrupa la tabla <code>tanganana_general</code> por género y encuentra el número de canciones reproducidas para cada género. Luego ordene el resultado en orden descendente y guárdelo en la tabla <code>tanganana_genres</code>:</p>
 
 </div>
 </div>
@@ -3061,13 +3061,13 @@ spr_genres = spr_general.groupby('genre')['genre'].count().sort_values(ascending
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Contar cuántas veces aparece cada género musical en el DataFrame &#39;shel_general&#39;</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Contar cuántas veces aparece cada género musical en el DataFrame &#39;tanganana_general&#39;</span>
 <span class="c1"># y ordenar los resultados de forma descendente.</span>
-<span class="n">shel_genres</span> <span class="o">=</span> <span class="n">shel_general</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;genre&#39;</span><span class="p">)[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">tanganana_genres</span> <span class="o">=</span> <span class="n">tanganana_general</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;genre&#39;</span><span class="p">)[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
-<div id="cell-28" class="clipboard-copy-txt"># Contar cuántas veces aparece cada género musical en el DataFrame 'shel_general'
+<div id="cell-28" class="clipboard-copy-txt"># Contar cuántas veces aparece cada género musical en el DataFrame 'tanganana_general'
 # y ordenar los resultados de forma descendente.
-shel_genres = shel_general.groupby('genre')['genre'].count().sort_values(ascending=False)</div>
+tanganana_genres = tanganana_general.groupby('genre')['genre'].count().sort_values(ascending=False)</div>
     
         </div>
     </div>
@@ -3083,7 +3083,7 @@ shel_genres = shel_general.groupby('genre')['genre'].count().sort_values(ascendi
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>&gt; Ejercicio</strong>:  Mostrar las primeras 10 filas de 'shel_genres'</p>
+<p><strong>&gt; Ejercicio</strong>:  Mostrar las primeras 10 filas de 'tanganana_genres'</p>
 
 </div>
 </div>
@@ -3109,9 +3109,9 @@ shel_genres = shel_general.groupby('genre')['genre'].count().sort_values(ascendi
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#FIXME (usar &#39;.head(10)&#39;)</span>
 </pre></div>
-<div id="cell-29" class="clipboard-copy-txt">#FIXME</div>
+<div id="cell-29" class="clipboard-copy-txt">#FIXME (usar '.head(10)')</div>
     
         </div>
     </div>

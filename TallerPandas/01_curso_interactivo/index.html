@@ -1605,7 +1605,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/fralfaro/techschool/blob/features/taller_pandas/TallerPandas/01_curso_interactivo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+<p><a href="https://colab.research.google.com/github/fralfaro/techschool/blob/main/docs/TallerPandas/01_curso_interactivo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
 
 </div>
 </div>
@@ -1617,7 +1617,9 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="mini-curso">Mini Curso<a class="anchor-link" href="#mini-curso">&#182;</a></h1>
+<h1 id="mini-curso">Mini Curso<a class="anchor-link" href="#mini-curso">&#182;</a></h1><blockquote><p><strong>Nota</strong>: Para acceder a la presentación del mini curso en formato PDF, por favor dirígete al siguiente <a href="https://github.com/fralfaro/techschool/blob/main/docs/TallerPandas/presentacion.pdf">enlace</a>.</p>
+</blockquote>
+
 </div>
 </div>
 </div>
@@ -1713,7 +1715,7 @@ Licensed under the Apache License, Version 2.0.
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="utilizando-pandas-con-excel">Utilizando Pandas con Excel<a class="anchor-link" href="#utilizando-pandas-con-excel">&#182;</a></h2><h3 id="conjunto-de-datos">Conjunto de Datos<a class="anchor-link" href="#conjunto-de-datos">&#182;</a></h3><p>En este tutorial, utilizaremos un archivo de Excel con múltiples hojas que hemos creado a partir de los datos de puntuaciones IMDB disponibles en Kaggle. Puedes acceder y descargar el archivo desde este enlace.</p>
-<p><img src="https://www.dataquest.io/wp-content/uploads/2019/01/img-excel-1.png" ></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/techschool/main/docs/images/table.png" ></p>
 <p>Nuestro archivo de Excel consta de tres hojas: '1900', '2000' y '2010', cada una conteniendo datos de películas correspondientes a esos años.</p>
 <p>Utilizaremos este conjunto de datos para explorar la distribución de calificaciones de las películas, identificar aquellas con las calificaciones y ganancias netas más altas, y calcular estadísticas relevantes sobre el conjunto de películas.</p>
 
@@ -1818,7 +1820,7 @@ pip install pandas openpyxl xlrd</code></pre>
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Especificar la ruta del archivo Excel</span>
-<span class="n">excel_file</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/fralfaro/techschool/features/taller_pandas/TallerPandas/data/movies.xls&#39;</span>
+<span class="n">excel_file</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/fralfaro/techschool/main/docs/TallerPandas/data/movies.xls&#39;</span>
 
 <span class="c1"># Lee los nombres de las hojas</span>
 <span class="n">nombres_hojas</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelFile</span><span class="p">(</span><span class="n">excel_file</span><span class="p">)</span><span class="o">.</span><span class="n">sheet_names</span>
@@ -1827,7 +1829,7 @@ pip install pandas openpyxl xlrd</code></pre>
 <span class="n">nombres_hojas</span>
 </pre></div>
 <div id="cell-2" class="clipboard-copy-txt"># Especificar la ruta del archivo Excel
-excel_file = 'https://raw.githubusercontent.com/fralfaro/techschool/features/taller_pandas/TallerPandas/data/movies.xls'
+excel_file = 'https://raw.githubusercontent.com/fralfaro/techschool/main/docs/TallerPandas/data/movies.xls'
 
 # Lee los nombres de las hojas
 nombres_hojas = pd.ExcelFile(excel_file).sheet_names
