@@ -1,6 +1,6 @@
 # Repositorio para TechSchool
 
-[![example workflow](https://github.com/fralfaro/blog/actions/workflows/techschool.yml/badge.svg)](https://github.com/fralfaro/techschool/actions)
+[![example workflow](https://github.com/fralfaro/techschool/actions/workflows/documentation.yml/badge.svg)](https://github.com/fralfaro/techschool/actions)
 [![documentation](https://img.shields.io/badge/📒-Website-yellow)](https://fralfaro.github.io/techschool/)
 
 <img src="docs/images/cljs.jpg" alt="cljs" width="200">
