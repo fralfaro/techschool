@@ -1,15 +1,13 @@
-# Introducción básica a Python
-
-## Material
-
-El material está disponible en el siguiente [repositorio](https://github.com/fralfaro/DS-Python-Course), para obtener el código de fuente basta con que ejecutes el siguiente comando:
-
-> `https://github.com/fralfaro/DS-Python-Course`
+# Repositorio para TechSchool
 
 
-## Contenidos temáticos
+<img src="images/cljs.jpg" alt="cljs" width="200">
 
-* Introducción a Python
-* Nomenclatura
-* Introducción Pandas
-* Introducción Seaborn
+¡Bienvenidos al repositorio oficial de **TechSchool**!
+
+Este espacio ha sido creado con el objetivo de proporcionar a los estudiantes todos los materiales y archivos necesarios para nuestros talleres. Dentro de este repositorio, encontrarás las carpetas correspondientes a cada uno de los talleres que ofrecemos en nuestros eventos.
+
+**TechSchool** es la evolución de los eventos NodeSchool y es organizado por la comunidad JavaScript Chile. Nuestro primer evento se celebra el [Fecha del Evento, ej: 28 de octubre de 2023] y estamos emocionados de compartir conocimientos y experiencias con todos los participantes.
+
+Te invitamos a explorar las carpetas, descargar el material y prepararte para una experiencia educativa enriquecedora. ¡Nos vemos en TechSchool!
+
