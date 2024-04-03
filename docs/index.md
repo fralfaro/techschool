@@ -10,4 +10,4 @@ Este espacio ha sido creado con el objetivo de proporcionar a los estudiantes to
 
 Te invitamos a explorar las carpetas, descargar el material y prepararte para una experiencia educativa enriquecedora. ¡Nos vemos en TechSchool!
 
-> **Nota:** Esta versión es una adaptación personal del repositorio oficial de [JSConfCL/techschool](https://github.com/JSConfCL/techschool).
+> **Nota:** Esta [versión](https://github.com/fralfaro/techschool) es una adaptación personal del repositorio oficial de [JSConfCL/techschool](https://github.com/JSConfCL/techschool).
