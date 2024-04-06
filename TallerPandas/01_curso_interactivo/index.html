@@ -2456,7 +2456,7 @@ memory usage: 984.9+ KB
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Especifica la ruta donde deseas guardar el archivo Excel</span>
-<span class="n">ruta_archivo_excel</span> <span class="o">=</span> <span class="s1">&#39;data/movies2.xlsx&#39;</span>
+<span class="n">ruta_archivo_excel</span> <span class="o">=</span> <span class="s1">&#39;movies2.xlsx&#39;</span>
 
 <span class="c1"># Crea un objeto ExcelWriter</span>
 <span class="k">with</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelWriter</span><span class="p">(</span><span class="n">ruta_archivo_excel</span><span class="p">)</span> <span class="k">as</span> <span class="n">writer</span><span class="p">:</span>
@@ -2470,7 +2470,7 @@ memory usage: 984.9+ KB
     <span class="n">df_2010</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">&#39;2010&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 <div id="cell-6" class="clipboard-copy-txt"># Especifica la ruta donde deseas guardar el archivo Excel
-ruta_archivo_excel = 'data/movies2.xlsx'
+ruta_archivo_excel = 'movies2.xlsx'
 
 # Crea un objeto ExcelWriter
 with pd.ExcelWriter(ruta_archivo_excel) as writer:
