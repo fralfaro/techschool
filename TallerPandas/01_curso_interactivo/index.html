@@ -328,6 +328,26 @@
     Definiciones
   </a>
   
+    <nav class="md-nav" aria-label="Definiciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csv-comma-separated-values" class="md-nav__link">
+    CSV (Comma-Separated Values)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excel-xlsxxls" class="md-nav__link">
+    Excel (XLSX/XLS)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -379,8 +399,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#operaciones-con-gruopby" class="md-nav__link">
-    Operaciones con Gruopby
+  <a href="#operaciones-con-groupby" class="md-nav__link">
+    Operaciones con GroupBy
   </a>
   
 </li>
@@ -479,6 +499,26 @@
     Definiciones
   </a>
   
+    <nav class="md-nav" aria-label="Definiciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csv-comma-separated-values" class="md-nav__link">
+    CSV (Comma-Separated Values)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excel-xlsxxls" class="md-nav__link">
+    Excel (XLSX/XLS)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -530,8 +570,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#operaciones-con-gruopby" class="md-nav__link">
-    Operaciones con Gruopby
+  <a href="#operaciones-con-groupby" class="md-nav__link">
+    Operaciones con GroupBy
   </a>
   
 </li>
@@ -1645,10 +1685,8 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="tipos-de-datos-csv-y-excel">Tipos de Datos: CSV y Excel<a class="anchor-link" href="#tipos-de-datos-csv-y-excel">&#182;</a></h2><h3 id="definiciones">Definiciones<a class="anchor-link" href="#definiciones">&#182;</a></h3><p><strong>CSV (Comma-Separated Values)</strong>:</p>
-<p><a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> es un formato de archivo que se utiliza para almacenar datos tabulares, donde cada línea del archivo representa una fila de datos y los valores de cada fila están separados por comas u otros delimitadores. Es un formato simple y ampliamente utilizado para intercambiar datos entre diferentes aplicaciones.</p>
-<p><strong>Excel (XLSX/XLS)</strong>:</p>
-<p><a href="https://en.wikipedia.org/wiki/Microsoft_Excel">Excel</a> es una aplicación de hojas de cálculo desarrollada por Microsoft. Los archivos de Excel pueden contener múltiples hojas de cálculo, gráficos, fórmulas y datos formateados. Pueden guardar datos en una variedad de formatos, siendo XLSX el formato moderno basado en XML y XLS el formato más antiguo.</p>
+<h2 id="tipos-de-datos-csv-y-excel">Tipos de Datos: CSV y Excel<a class="anchor-link" href="#tipos-de-datos-csv-y-excel">&#182;</a></h2><h3 id="definiciones">Definiciones<a class="anchor-link" href="#definiciones">&#182;</a></h3><h4 id="csv-comma-separated-values">CSV (Comma-Separated Values)<a class="anchor-link" href="#csv-comma-separated-values">&#182;</a></h4><p><a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> es un formato de archivo que se utiliza para almacenar datos tabulares, donde cada línea del archivo representa una fila de datos y los valores de cada fila están separados por comas u otros delimitadores. Es un formato simple y ampliamente utilizado para intercambiar datos entre diferentes aplicaciones.</p>
+<h4 id="excel-xlsxxls">Excel (XLSX/XLS)<a class="anchor-link" href="#excel-xlsxxls">&#182;</a></h4><p><a href="https://en.wikipedia.org/wiki/Microsoft_Excel">Excel</a> es una aplicación de hojas de cálculo desarrollada por Microsoft. Los archivos de Excel pueden contener múltiples hojas de cálculo, gráficos, fórmulas y datos formateados. Pueden guardar datos en una variedad de formatos, siendo XLSX el formato moderno basado en XML y XLS el formato más antiguo.</p>
 <h3 id="principales-diferencias">Principales Diferencias<a class="anchor-link" href="#principales-diferencias">&#182;</a></h3><ol>
 <li><strong>Estructura del Archivo</strong>:<ul>
 <li>En un archivo CSV, los datos se almacenan como texto plano y cada fila representa un registro, con campos separados por comas o algún otro delimitador.</li>
@@ -1715,10 +1753,147 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="utilizando-pandas-con-excel">Utilizando Pandas con Excel<a class="anchor-link" href="#utilizando-pandas-con-excel">&#182;</a></h2><h3 id="conjunto-de-datos">Conjunto de Datos<a class="anchor-link" href="#conjunto-de-datos">&#182;</a></h3><p>En este tutorial, utilizaremos un archivo de Excel con múltiples hojas que hemos creado a partir de los datos de puntuaciones IMDB disponibles en Kaggle. Puedes acceder y descargar el archivo desde este enlace.</p>
+<h2 id="utilizando-pandas-con-excel">Utilizando Pandas con Excel<a class="anchor-link" href="#utilizando-pandas-con-excel">&#182;</a></h2><h3 id="conjunto-de-datos">Conjunto de Datos<a class="anchor-link" href="#conjunto-de-datos">&#182;</a></h3><p>En este tutorial, utilizaremos un archivo de Excel con múltiples hojas que hemos creado a partir de los datos de <a href="https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows">puntuaciones IMDB</a> disponibles en Kaggle. Puedes acceder y descargar el archivo desde este enlace.</p>
 <p><img src="https://raw.githubusercontent.com/fralfaro/techschool/main/docs/images/table.png" ></p>
 <p>Nuestro archivo de Excel consta de tres hojas: '1900', '2000' y '2010', cada una conteniendo datos de películas correspondientes a esos años.</p>
 <p>Utilizaremos este conjunto de datos para explorar la distribución de calificaciones de las películas, identificar aquellas con las calificaciones y ganancias netas más altas, y calcular estadísticas relevantes sobre el conjunto de películas.</p>
+<p><strong>Descripción de los datos</strong></p>
+<p>La siguiente tabla proporciona una descripción detallada de los diferentes tipos de datos presentes en el conjunto de datos:</p>
+<table>
+<thead><tr>
+<th>Columna</th>
+<th>Descripción</th>
+<th>Tipo de Datos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Title</td>
+<td>Título de la película</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Year</td>
+<td>Año de lanzamiento</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Genres</td>
+<td>Géneros de la película</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>Idioma de la película</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Country</td>
+<td>País de origen de la película</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Content Rating</td>
+<td>Clasificación de contenido</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Duration</td>
+<td>Duración de la película (min)</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Aspect Ratio</td>
+<td>Relación de aspecto</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Budget</td>
+<td>Presupuesto de la película</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Gross Earnings</td>
+<td>Ganancias brutas</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Director</td>
+<td>Director de la película</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Actor 1</td>
+<td>Primer actor principal</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Actor 2</td>
+<td>Segundo actor principal</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Actor 3</td>
+<td>Tercer actor principal</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Facebook Likes - Director</td>
+<td>Likes en Facebook del director</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Facebook Likes - Actor 1</td>
+<td>Likes en Facebook del Actor 1</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Facebook Likes - Actor 2</td>
+<td>Likes en Facebook del Actor 2</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Facebook Likes - Actor 3</td>
+<td>Likes en Facebook del Actor 3</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Facebook Likes - cast Total</td>
+<td>Total de Likes del reparto en Facebook</td>
+<td>int64</td>
+</tr>
+<tr>
+<td>Facebook likes - Movie</td>
+<td>Likes en Facebook de la película</td>
+<td>int64</td>
+</tr>
+<tr>
+<td>Facenumber in posters</td>
+<td>Número de caras en posters</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>User Votes</td>
+<td>Votos de usuarios</td>
+<td>int64</td>
+</tr>
+<tr>
+<td>Reviews by Users</td>
+<td>Reseñas de usuarios</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Reviews by Crtiics</td>
+<td>Reseñas de críticos</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>IMDB Score</td>
+<td>Puntuación IMDB</td>
+<td>float64</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
@@ -2161,6 +2336,92 @@ df.head()</div>
 </div>
 
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-5">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+<div id="cell-5" class="clipboard-copy-txt">df.info()</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 5042 entries, 0 to 5041
+Data columns (total 25 columns):
+ #   Column                       Non-Null Count  Dtype  
+---  ------                       --------------  -----  
+ 0   Title                        5042 non-null   object 
+ 1   Year                         4935 non-null   float64
+ 2   Genres                       5042 non-null   object 
+ 3   Language                     5031 non-null   object 
+ 4   Country                      5038 non-null   object 
+ 5   Content Rating               4740 non-null   object 
+ 6   Duration                     5028 non-null   float64
+ 7   Aspect Ratio                 4714 non-null   float64
+ 8   Budget                       4551 non-null   float64
+ 9   Gross Earnings               4159 non-null   float64
+ 10  Director                     4938 non-null   object 
+ 11  Actor 1                      5035 non-null   object 
+ 12  Actor 2                      5029 non-null   object 
+ 13  Actor 3                      5020 non-null   object 
+ 14  Facebook Likes - Director    4938 non-null   float64
+ 15  Facebook Likes - Actor 1     5035 non-null   float64
+ 16  Facebook Likes - Actor 2     5029 non-null   float64
+ 17  Facebook Likes - Actor 3     5020 non-null   float64
+ 18  Facebook Likes - cast Total  5042 non-null   int64  
+ 19  Facebook likes - Movie       5042 non-null   int64  
+ 20  Facenumber in posters        5029 non-null   float64
+ 21  User Votes                   5042 non-null   int64  
+ 22  Reviews by Users             5022 non-null   float64
+ 23  Reviews by Crtiics           4993 non-null   float64
+ 24  IMDB Score                   5042 non-null   float64
+dtypes: float64(13), int64(3), object(9)
+memory usage: 984.9+ KB
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -2179,12 +2440,12 @@ df.head()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-5">
+            <clipboard-copy for="cell-6">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2208,7 +2469,7 @@ df.head()</div>
     <span class="c1"># Guarda otro DataFrame en otra hoja llamada &#39;2010&#39;</span>
     <span class="n">df_2010</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">&#39;2010&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
-<div id="cell-5" class="clipboard-copy-txt"># Especifica la ruta donde deseas guardar el archivo Excel
+<div id="cell-6" class="clipboard-copy-txt"># Especifica la ruta donde deseas guardar el archivo Excel
 ruta_archivo_excel = 'data/movies2.xlsx'
 
 # Crea un objeto ExcelWriter
@@ -2246,12 +2507,12 @@ with pd.ExcelWriter(ruta_archivo_excel) as writer:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-6">
+            <clipboard-copy for="cell-7">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2265,7 +2526,7 @@ with pd.ExcelWriter(ruta_archivo_excel) as writer:
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Primeras filas del DataFrame:&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
-<div id="cell-6" class="clipboard-copy-txt"># Mostrar las primeras filas del DataFrame
+<div id="cell-7" class="clipboard-copy-txt"># Mostrar las primeras filas del DataFrame
 print("Primeras filas del DataFrame:")
 df.head(5)</div>
     
@@ -2297,7 +2558,7 @@ df.head(5)</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
 
@@ -2483,12 +2744,12 @@ df.head(5)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-7">
+            <clipboard-copy for="cell-8">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2502,7 +2763,7 @@ df.head(5)</div>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ultimas filas del DataFrame:&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
-<div id="cell-7" class="clipboard-copy-txt"># Mostrar las ultimas  filas del DataFrame
+<div id="cell-8" class="clipboard-copy-txt"># Mostrar las ultimas  filas del DataFrame
 print("Ultimas filas del DataFrame:")
 df.tail(5)</div>
     
@@ -2534,7 +2795,7 @@ df.tail(5)</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 
 
 
@@ -2720,12 +2981,12 @@ df.tail(5)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-8">
+            <clipboard-copy for="cell-9">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2739,7 +3000,7 @@ df.tail(5)</div>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dimensiones del DataFrame:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
-<div id="cell-8" class="clipboard-copy-txt"># Obtener las dimensiones del DataFrame
+<div id="cell-9" class="clipboard-copy-txt"># Obtener las dimensiones del DataFrame
 print("Dimensiones del DataFrame:")
 print(df.shape)</div>
     
@@ -2780,12 +3041,12 @@ print(df.shape)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-9">
+            <clipboard-copy for="cell-10">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2799,7 +3060,7 @@ print(df.shape)</div>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Columnas del DataFrame:&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
-<div id="cell-9" class="clipboard-copy-txt"># Mostrar todas las columnas del DataFrame
+<div id="cell-10" class="clipboard-copy-txt"># Mostrar todas las columnas del DataFrame
 print("Columnas del DataFrame:")
 df.columns</div>
     
@@ -2831,7 +3092,7 @@ df.columns</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 
 
 
@@ -2860,12 +3121,12 @@ df.columns</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-10">
+            <clipboard-copy for="cell-11">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2878,7 +3139,7 @@ df.columns</div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Valores nulos por columna</span>
 <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
-<div id="cell-10" class="clipboard-copy-txt"># Valores nulos por columna
+<div id="cell-11" class="clipboard-copy-txt"># Valores nulos por columna
 df.isnull().sum()</div>
     
         </div>
@@ -2897,7 +3158,7 @@ df.isnull().sum()</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
@@ -2944,12 +3205,12 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-11">
+            <clipboard-copy for="cell-12">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2963,7 +3224,7 @@ dtype: int64</pre>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Valores unicos por columnas:&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
 </pre></div>
-<div id="cell-11" class="clipboard-copy-txt"># Valores unicos por columnas
+<div id="cell-12" class="clipboard-copy-txt"># Valores unicos por columnas
 print("Valores unicos por columnas:")
 df.nunique()</div>
     
@@ -2995,7 +3256,7 @@ df.nunique()</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 
 
 
@@ -3042,12 +3303,12 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-12">
+            <clipboard-copy for="cell-13">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3061,7 +3322,7 @@ dtype: int64</pre>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Información del DataFrame:&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
-<div id="cell-12" class="clipboard-copy-txt"># Mostrar información del DataFrame
+<div id="cell-13" class="clipboard-copy-txt"># Mostrar información del DataFrame
 print("Información del DataFrame:")
 df.info()</div>
     
@@ -3133,12 +3394,12 @@ memory usage: 984.9+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-13">
+            <clipboard-copy for="cell-14">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3152,7 +3413,7 @@ memory usage: 984.9+ KB
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadísticas descriptivas del DataFrame:&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
-<div id="cell-13" class="clipboard-copy-txt"># Calcular estadísticas descriptivas del DataFrame
+<div id="cell-14" class="clipboard-copy-txt"># Calcular estadísticas descriptivas del DataFrame
 print("Estadísticas descriptivas del DataFrame:")
 df.describe()</div>
     
@@ -3184,7 +3445,7 @@ df.describe()</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 
 
 
@@ -3396,89 +3657,6 @@ df.describe()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-14">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Seleccionar una columna específica del DataFrame</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Valores únicos de una columna específica:&quot;</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
-</pre></div>
-<div id="cell-14" class="clipboard-copy-txt"># Seleccionar una columna específica del DataFrame
-print("Valores únicos de una columna específica:")
-df['Year'].unique()</div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Valores únicos de una columna específica:
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([1916., 1920., 1925., 1927., 1929., 1930., 1932., 1933., 1934.,
-       1935., 1936., 1937., 1938., 1939., 1940., 1941., 1942., 1943.,
-       1944., 1945., 1946., 1947., 1948., 1949., 1950., 1951., 1952.,
-       1953., 1954., 1955., 1956., 1957., 1958., 1959., 1960., 1961.,
-       1962., 1963., 1964., 1965., 1966., 1967., 1968., 1969., 1970.,
-       1971., 1972., 1973., 1974., 1975., 1976., 1977., 1978., 1979.,
-       1980., 1981., 1982., 1983., 1984., 1985., 1986., 1987., 1988.,
-       1989., 1990., 1991., 1992., 1993., 1994., 1995., 1996., 1997.,
-       1998., 1999., 2000., 2001., 2002., 2003., 2004., 2005., 2006.,
-       2007., 2008., 2009., 2010., 2011., 2012., 2013., 2014., 2015.,
-       2016.,   nan])</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
@@ -3494,11 +3672,11 @@ df['Year'].unique()</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Obtener los valores únicos de cada columna</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Seleccionar una columna específica del DataFrame</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Valores únicos de una columna específica:&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 </pre></div>
-<div id="cell-15" class="clipboard-copy-txt"># Obtener los valores únicos de cada columna
+<div id="cell-15" class="clipboard-copy-txt"># Seleccionar una columna específica del DataFrame
 print("Valores únicos de una columna específica:")
 df['Year'].unique()</div>
     
@@ -3577,12 +3755,95 @@ df['Year'].unique()</div>
                 </div>
             </clipboard-copy>
         </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Obtener los valores únicos de cada columna</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Valores únicos de una columna específica:&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+<div id="cell-16" class="clipboard-copy-txt"># Obtener los valores únicos de cada columna
+print("Valores únicos de una columna específica:")
+df['Year'].unique()</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Valores únicos de una columna específica:
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>array([1916., 1920., 1925., 1927., 1929., 1930., 1932., 1933., 1934.,
+       1935., 1936., 1937., 1938., 1939., 1940., 1941., 1942., 1943.,
+       1944., 1945., 1946., 1947., 1948., 1949., 1950., 1951., 1952.,
+       1953., 1954., 1955., 1956., 1957., 1958., 1959., 1960., 1961.,
+       1962., 1963., 1964., 1965., 1966., 1967., 1968., 1969., 1970.,
+       1971., 1972., 1973., 1974., 1975., 1976., 1977., 1978., 1979.,
+       1980., 1981., 1982., 1983., 1984., 1985., 1986., 1987., 1988.,
+       1989., 1990., 1991., 1992., 1993., 1994., 1995., 1996., 1997.,
+       1998., 1999., 2000., 2001., 2002., 2003., 2004., 2005., 2006.,
+       2007., 2008., 2009., 2010., 2011., 2012., 2013., 2014., 2015.,
+       2016.,   nan])</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-17">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Filtrar filas que cumplan una condición</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Filtrar filas que cumplan una condición:&quot;</span><span class="p">)</span>
 <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">2000</span><span class="p">]</span>
 <span class="n">filtered_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
-<div id="cell-16" class="clipboard-copy-txt"># Filtrar filas que cumplan una condición
+<div id="cell-17" class="clipboard-copy-txt"># Filtrar filas que cumplan una condición
 print("Filtrar filas que cumplan una condición:")
 filtered_df = df[df['Year'] > 2000]
 filtered_df.head()</div>
@@ -3615,7 +3876,7 @@ filtered_df.head()</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
@@ -3801,12 +4062,12 @@ filtered_df.head()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-17">
+            <clipboard-copy for="cell-18">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3820,7 +4081,7 @@ filtered_df.head()</div>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Conteo de los distintos lenguaje de las peliculas:&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Language&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
-<div id="cell-17" class="clipboard-copy-txt"># Contar valores de una columan específica
+<div id="cell-18" class="clipboard-copy-txt"># Contar valores de una columan específica
 print("Conteo de los distintos lenguaje de las peliculas:")
 df['Language'].value_counts()</div>
     
@@ -3852,7 +4113,7 @@ df['Language'].value_counts()</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
@@ -3921,12 +4182,12 @@ Name: Language, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-18">
+            <clipboard-copy for="cell-19">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3941,7 +4202,7 @@ Name: Language, dtype: int64</pre>
 <span class="n">sorted_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Title&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">sorted_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
-<div id="cell-18" class="clipboard-copy-txt"># Ordenar el DataFrame por una columna específica
+<div id="cell-19" class="clipboard-copy-txt"># Ordenar el DataFrame por una columna específica
 print("Ordenar el DataFrame por una columna específica:")
 sorted_df = df.sort_values(by='Title', ascending=False)
 sorted_df.head()</div>
@@ -3974,7 +4235,7 @@ sorted_df.head()</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 
 
 
@@ -4172,12 +4433,12 @@ sorted_df.head()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-19">
+            <clipboard-copy for="cell-20">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4193,7 +4454,7 @@ sorted_df.head()</div>
 <span class="c1"># Imprimir el máximo valor entre todos los conteos de géneros</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Máximo número de géneros en una entrada:&quot;</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">total_generos</span><span class="p">))</span>
 </pre></div>
-<div id="cell-19" class="clipboard-copy-txt"># Aplicar una función lambda a cada entrada de la columna 'Genres' para contar el número de géneros en cada entrada
+<div id="cell-20" class="clipboard-copy-txt"># Aplicar una función lambda a cada entrada de la columna 'Genres' para contar el número de géneros en cada entrada
 total_generos = df['Genres'].apply(lambda x: len(x.split('|')))
 
 # Imprimir el máximo valor entre todos los conteos de géneros
@@ -4247,12 +4508,12 @@ print("Máximo número de géneros en una entrada:", max(total_generos))</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-20">
+            <clipboard-copy for="cell-21">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4266,7 +4527,7 @@ print("Máximo número de géneros en una entrada:", max(total_generos))</div>
 <span class="n">num_filas_duplicadas</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Número de filas duplicadas en el DataFrame:&quot;</span><span class="p">,</span> <span class="n">num_filas_duplicadas</span><span class="p">)</span>
 </pre></div>
-<div id="cell-20" class="clipboard-copy-txt"># Contar el número de filas duplicadas en el DataFrame
+<div id="cell-21" class="clipboard-copy-txt"># Contar el número de filas duplicadas en el DataFrame
 num_filas_duplicadas = df.duplicated().sum()
 print("Número de filas duplicadas en el DataFrame:", num_filas_duplicadas)</div>
     
@@ -4306,12 +4567,12 @@ print("Número de filas duplicadas en el DataFrame:", num_filas_duplicadas)</div
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-21">
+            <clipboard-copy for="cell-22">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4326,7 +4587,7 @@ print("Número de filas duplicadas en el DataFrame:", num_filas_duplicadas)</div
 <span class="n">num_filas_duplicadas</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Número de filas duplicadas en el DataFrame:&quot;</span><span class="p">,</span> <span class="n">num_filas_duplicadas</span><span class="p">)</span>
 </pre></div>
-<div id="cell-21" class="clipboard-copy-txt"># Eliminar filas duplicadas del DataFrame
+<div id="cell-22" class="clipboard-copy-txt"># Eliminar filas duplicadas del DataFrame
 df = df.drop_duplicates()
 num_filas_duplicadas = df.duplicated().sum()
 print("Número de filas duplicadas en el DataFrame:", num_filas_duplicadas)</div>
@@ -4379,12 +4640,12 @@ print("Número de filas duplicadas en el DataFrame:", num_filas_duplicadas)</div
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-22">
+            <clipboard-copy for="cell-23">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4402,7 +4663,7 @@ print("Número de filas duplicadas en el DataFrame:", num_filas_duplicadas)</div
 <span class="c1"># Imprimir valores</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;DurationRounded&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 </pre></div>
-<div id="cell-22" class="clipboard-copy-txt">import math
+<div id="cell-23" class="clipboard-copy-txt">import math
 
 # Redondear cada valor de la columna 'Duration' al múltiplo de 30 más cercano
 df['DurationRounded'] = df['Duration'].fillna(0).apply(lambda x: math.ceil(x / 30) * 30)
@@ -4426,7 +4687,7 @@ df['DurationRounded'].unique()</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 
 
 
@@ -4449,12 +4710,12 @@ df['DurationRounded'].unique()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-23">
+            <clipboard-copy for="cell-24">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4480,7 +4741,7 @@ df['DurationRounded'].unique()</div>
 <span class="c1"># Imprimir valores</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Decade&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 </pre></div>
-<div id="cell-23" class="clipboard-copy-txt"># Función para obtener la década correspondiente
+<div id="cell-24" class="clipboard-copy-txt"># Función para obtener la década correspondiente
 def obtener_decada(year):
     if year < 1900:
         return None
@@ -4512,7 +4773,7 @@ df['Decade'].unique()</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 
 
 
@@ -4534,12 +4795,12 @@ df['Decade'].unique()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-24">
+            <clipboard-copy for="cell-25">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4561,7 +4822,7 @@ df['Decade'].unique()</div>
 <span class="c1"># Imprimir valores</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;IMDB Score Category&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 </pre></div>
-<div id="cell-24" class="clipboard-copy-txt"># Definición de los intervalos
+<div id="cell-25" class="clipboard-copy-txt"># Definición de los intervalos
 bins = [0, 5, 7, 10]
 
 # Definición de las etiquetas
@@ -4589,7 +4850,7 @@ df['IMDB Score Category'].unique()</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
 
 
 
@@ -4612,12 +4873,12 @@ Categories (3, object): [&#39;Bajo&#39; &lt; &#39;Medio&#39; &lt; &#39;Alto&#39;
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-25">
+            <clipboard-copy for="cell-26">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4702,7 +4963,7 @@ Categories (3, object): [&#39;Bajo&#39; &lt; &#39;Medio&#39; &lt; &#39;Alto&#39;
 <span class="c1"># Imprimir valores</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Continent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 </pre></div>
-<div id="cell-25" class="clipboard-copy-txt"># Definir el diccionario de países y continentes
+<div id="cell-26" class="clipboard-copy-txt"># Definir el diccionario de países y continentes
 continentes_por_pais = {
     'USA': 'North America',
     'Germany': 'Europe',
@@ -4793,7 +5054,7 @@ df['Continent'].unique()</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
 
 
 
@@ -4817,7 +5078,8 @@ df['Continent'].unique()</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="operaciones-con-gruopby">Operaciones con Gruopby<a class="anchor-link" href="#operaciones-con-gruopby">&#182;</a></h3>
+<h3 id="operaciones-con-groupby">Operaciones con GroupBy<a class="anchor-link" href="#operaciones-con-groupby">&#182;</a></h3><p><img src="https://raw.githubusercontent.com/fralfaro/techschool/main/docs/images/groupby.svg" width ="600" ></p>
+
 </div>
 </div>
 </div>
@@ -4827,12 +5089,12 @@ df['Continent'].unique()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-26">
+            <clipboard-copy for="cell-27">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4846,7 +5108,7 @@ df['Continent'].unique()</div>
 <span class="n">df_grouped_year</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">)[</span><span class="s1">&#39;IMDB Score&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">df_grouped_year</span>
 </pre></div>
-<div id="cell-26" class="clipboard-copy-txt"># Agrupar por el año y calcular la media de IMDB Score
+<div id="cell-27" class="clipboard-copy-txt"># Agrupar por el año y calcular la media de IMDB Score
 df_grouped_year = df.groupby('Year')['IMDB Score'].mean()
 df_grouped_year</div>
     
@@ -4866,7 +5128,7 @@ df_grouped_year</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
 
 
 
@@ -4900,12 +5162,12 @@ Name: IMDB Score, Length: 91, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-27">
+            <clipboard-copy for="cell-28">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4919,7 +5181,7 @@ Name: IMDB Score, Length: 91, dtype: float64</pre>
 <span class="n">df_grouped_year_country</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="s1">&#39;Country&#39;</span><span class="p">])[</span><span class="s1">&#39;User Votes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">df_grouped_year_country</span>
 </pre></div>
-<div id="cell-27" class="clipboard-copy-txt"># Agrupar por año y país y calcular la suma de User Votes
+<div id="cell-28" class="clipboard-copy-txt"># Agrupar por año y país y calcular la suma de User Votes
 df_grouped_year_country = df.groupby(['Year', 'Country'])['User Votes'].sum()
 df_grouped_year_country</div>
     
@@ -4939,7 +5201,7 @@ df_grouped_year_country</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 
 
 
@@ -4973,12 +5235,12 @@ Name: User Votes, Length: 496, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-28">
+            <clipboard-copy for="cell-29">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4992,7 +5254,7 @@ Name: User Votes, Length: 496, dtype: int64</pre>
 <span class="n">df_grouped_year_stats</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">)[</span><span class="s1">&#39;IMDB Score&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;median&#39;</span><span class="p">,</span> <span class="s1">&#39;std&#39;</span><span class="p">])</span>
 <span class="n">df_grouped_year_stats</span>
 </pre></div>
-<div id="cell-28" class="clipboard-copy-txt"># Agrupar por año y calcular varias estadísticas para IMDB Score
+<div id="cell-29" class="clipboard-copy-txt"># Agrupar por año y calcular varias estadísticas para IMDB Score
 df_grouped_year_stats = df.groupby('Year')['IMDB Score'].agg(['mean', 'median', 'std'])
 df_grouped_year_stats</div>
     
@@ -5012,7 +5274,7 @@ df_grouped_year_stats</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
 
 
 
@@ -5132,12 +5394,12 @@ df_grouped_year_stats</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-29">
+            <clipboard-copy for="cell-30">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5155,7 +5417,7 @@ df_grouped_year_stats</div>
 <span class="n">df_grouped_country_custom</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Country&#39;</span><span class="p">)[</span><span class="s1">&#39;User Votes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">custom_function</span><span class="p">)</span>
 <span class="n">df_grouped_country_custom</span>
 </pre></div>
-<div id="cell-29" class="clipboard-copy-txt"># Definir una función personalizada para calcular la diferencia entre el máximo y el mínimo de User Votes
+<div id="cell-30" class="clipboard-copy-txt"># Definir una función personalizada para calcular la diferencia entre el máximo y el mínimo de User Votes
 def custom_function(x):
     return x.max() - x.min()
 
@@ -5179,7 +5441,7 @@ df_grouped_country_custom</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
 
 
 
@@ -5213,12 +5475,12 @@ Name: User Votes, Length: 65, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-30">
+            <clipboard-copy for="cell-31">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5235,7 +5497,7 @@ Name: User Votes, Length: 65, dtype: int64</pre>
 <span class="n">df_grouped_imdb_category_count</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;IMDB Score Category&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
 <span class="n">df_grouped_imdb_category_count</span>
 </pre></div>
-<div id="cell-30" class="clipboard-copy-txt"># Dividir IMDB Score en intervalos y contar el número de películas en cada intervalo
+<div id="cell-31" class="clipboard-copy-txt"># Dividir IMDB Score en intervalos y contar el número de películas en cada intervalo
 bins = [0, 5, 7, 10]
 labels = ['Bajo', 'Medio', 'Alto']
 df['IMDB Score Category'] = pd.cut(df['IMDB Score'], bins=bins, labels=labels)
@@ -5258,7 +5520,7 @@ df_grouped_imdb_category_count</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
 
 
 
@@ -5285,7 +5547,8 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="pivot-tables">Pivot Tables<a class="anchor-link" href="#pivot-tables">&#182;</a></h3>
+<h3 id="pivot-tables">Pivot Tables<a class="anchor-link" href="#pivot-tables">&#182;</a></h3><p><img src="https://raw.githubusercontent.com/fralfaro/techschool/main/docs/images/pivot.png" width ="600" ></p>
+
 </div>
 </div>
 </div>
@@ -5295,12 +5558,12 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-31">
+            <clipboard-copy for="cell-32">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5314,7 +5577,7 @@ dtype: int64</pre>
 <span class="n">pivot_table_basic</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;User Votes&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="s1">&#39;Decade&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;Continent&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span>
 <span class="n">pivot_table_basic</span>
 </pre></div>
-<div id="cell-31" class="clipboard-copy-txt"># Crear una pivot table para calcular la suma de User Votes según el año y el país
+<div id="cell-32" class="clipboard-copy-txt"># Crear una pivot table para calcular la suma de User Votes según el año y el país
 pivot_table_basic = df.pivot_table(values='User Votes', index='Decade', columns='Continent', aggfunc='mean')
 pivot_table_basic</div>
     
@@ -5334,7 +5597,7 @@ pivot_table_basic</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
 
 
 
@@ -5420,12 +5683,12 @@ pivot_table_basic</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-32">
+            <clipboard-copy for="cell-33">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -5439,7 +5702,7 @@ pivot_table_basic</div>
 <span class="n">pivot_table_mean</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;IMDB Score&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="s1">&#39;DurationRounded&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">pivot_table_mean</span>
 </pre></div>
-<div id="cell-32" class="clipboard-copy-txt"># Crear una pivot table para calcular la media de IMDB Score según el año y el Content Rating
+<div id="cell-33" class="clipboard-copy-txt"># Crear una pivot table para calcular la media de IMDB Score según el año y el Content Rating
 pivot_table_mean = df.pivot_table(values='IMDB Score', index='DurationRounded', columns='Country', aggfunc='mean').fillna(0)
 pivot_table_mean</div>
     
@@ -5459,7 +5722,7 @@ pivot_table_mean</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
 
 
 
